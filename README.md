@@ -1,18 +1,48 @@
 # Unit 18: Web Performance
 
-## Overview
+# Budget Tracker (hwk18)
 
-In this unit we will cover measuring and optimizing the performance of web applications. Today many users around the world access the web from older mobile devices on slower connections. As web applications continue to grow both in size and complexity, so do their load times. In order to ensure all users have a good experience, optimizing performance is an important consideration.
 
-Chrome Devtools and Google Lighthouse will be our primary tools for measuring web application performance. Devtools allows us to monitor network traffic and inspect the size of resources downloaded to the browser such as HTML, CSS, JavaScript and images. Lighthouse provides a performance scoring system based on metrics such as application bundle size, time to interaction, time to first meaningful paint, and more.
+Watch the video walk through ![here](./ReadmeImages/gif.gif)
 
-In order to deliver smaller application bundle sizes to the client, we'll perform several optimizations that involve compressing assets. This includes minifying JavaScript and CSS files, as well as compressing images. Another technique utilized to improve initial bundle size will be lazy loading, where we will defer loading certain assets until they're needed by the application.
+Explore the [Deployed Fitness Tracker on Heroku](https://budgettrackersuzy.herokuapp.com/)
 
-This unit will also focus on Progressive Web Apps (PWAs). Progressive web apps aim to blend the benefits of a traditional browser experience with those of a mobile application. PWAs may utilize the Service Worker and Cache APIs to cache assets and API responses to ensure applications work without an internet connection.
+View the [Fitness TRacker Github page](https://github.com/suzylebel/PWA-Budget-Tracker)
 
-We'll conclude this unit with an overview of webpack, a module bundler for JavaScript. Webpack eases the development of front end web applications by automating many of the optimizations performed earlier in the unit.
 
-## Key Topics
+
+## Table of Contents
+1. [User story](#User-story)
+2. [About the Project](#About-the-Project)
+3. [Tech/Framework used](#Tech-Used)
+4. [Code Breakdown](Code-Breakdown)
+5. [License](#License)
+6. [Contact](#Contact)
+7. [Credits](#Credit)
+
+## User Story
+
+```
+As a user, I want to be able to track my spending with this budget tracker both online and offline so that I can stay on top of my monthly budget goals
+```
+
+
+
+## About the Project
+
+Check out the 
+
+Explore the [Deployed Budget Tracker on Heroku](https://budgettrackersuzy.herokuapp.com/)
+
+This Web Pack application is for users to track their budget goals. 
+
+
+
+
+
+
+## Tech Used
+
 
 * Lighthouse
 
@@ -28,35 +58,32 @@ We'll conclude this unit with an overview of webpack, a module bundler for JavaS
 
 * Webpack
 
-## Comprehension Check
 
-You will be employer-ready if you can answer the following questions:
+## Code Breakdown
 
-1. What tools can be used to measure performance of a web application?
+As some of the frontend code was given to us we were responsible for updating the routes, using mongoose, and deploying to a virtual database!
 
-2. What are some metrics that matter when measuring web application performance?
 
-3. What is a PWA?
 
-## Learning Objectives
 
-You will be employer-competitive if you are able to:
+## Contribute
+If you’d like to fork this project from github please feel free! With a pull request I can grant you access to leave comments and notes about this project. 
 
-* Identify performance bottlenecks in web applications.
+## License 
+None
+ 
+## Contact 
 
-* Explain how performance can be measured in web applications.
+Suzy Le Bel 
+suzy.lebel@gmail.com
 
-* Explain the 5 main categories measured in a Lighthouse audit.
 
-* Optimize CSS, JS, and media assets for performance.
 
-* Set up webpack in a new front end project.
+## Credit
 
-* Convert an existing web application to a PWA and add offline functionality.
 
-## Homework: Budget Tracker
 
-* In this assignment, you'll build a budgeting app to keep track of personal finances. You'll utilize IndexedDB, cache API, and Service Workers to provide an offline experience for the application.
+
 
 ## Helpful Links
 
