@@ -42,13 +42,22 @@
     
     <canvas id="myChart"></canvas>
   </div>
-  <script >
-    
-}
-  </script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="db.js" ></script>
   <script src="index.js"></script>
+
+  <script >
+    // pulled this over from index.js (this can go in HTML file)
+    if('serviceWorker' in navigator) {
+      window.addEventListener('load', () => { 
+  navigator.serviceWorker.register('/service-worker.js');
+});
+};
+
+
+  </script>
+
 </body>
 </html>

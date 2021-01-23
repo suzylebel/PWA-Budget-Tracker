@@ -1,15 +1,28 @@
+// // google this// how to grab other broswers 
+// const indexedDB = window.indexedDB 
+// // add ors so it will work on any browser opens!
+
 let db;
 // create a new db request for a "budget" database.
 const request = indexedDB.open("budget", 1);
 
+request.onsuccess = event => {
+  console.log(request.result.name);
+};
+
+
+
+
 request.onupgradeneeded = function (event) {
-  // create object store called "pending" and set autoIncrement to true
+
   const db = event.target.result;
   db.createObjectStore("pending", { autoIncrement: true });
 };
 
 request.onsuccess = function (event) {
   db = event.target.result;
+
+// add error
 
   // check if app is online before reading from db
   if (navigator.onLine) {
