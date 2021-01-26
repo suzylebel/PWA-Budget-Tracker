@@ -3,9 +3,7 @@ let transactions = [];
 let myChart;
 
 // i added this
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js');
-};
+
 
 fetch("/api/transaction")
   .then(response => {
