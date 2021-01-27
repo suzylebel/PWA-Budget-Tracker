@@ -55,6 +55,10 @@ self.addEventListener("fetch", function(evt) {
   
       return;
     }
+
+    if (evt.request.cache === 'only-if-cached' && evt.request.mode !== 'same-origin') {
+      return;
+    }
   
     evt.respondWith(
       caches.open(CACHE_NAME).then(cache => {
@@ -63,5 +67,5 @@ self.addEventListener("fetch", function(evt) {
         });
       })
     );
-  });
+  }); 
   
